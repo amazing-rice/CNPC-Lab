@@ -3,7 +3,7 @@
 这是 **CNPC-Lab** 课题组/实验室网站的源代码仓库。
 本网站基于 [Hugo](https://gohugo.io/) 和 [Wowchemy (Hugo Blox)](https://hugoblox.com/) 构建，托管于 GitHub，并由 Netlify 自动部署。
 
-🌐 **访问网站**: [点击这里查看网站 (请替换为你的Netlify链接)](https://你的netlify链接.app)
+🌐 **访问网站**: [点击这里查看网站 (请替换为你的Netlify链接)](https://transcendent-snickerdoodle-3ee0d0.netlify.app/)
 
 ---
 
