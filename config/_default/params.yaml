@@ -1,0 +1,118 @@
+# SITE SETUP (网站设置)
+# Guide: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+
+# Appearance (外观设置)
+appearance:
+  theme_day: minimal     # 日间模式主题：minimal (极简白)
+  theme_night:           # 夜间模式主题：自动适配
+  font: native           # 字体：使用系统默认 (加载最快)
+  font_size: L           # 字号：L (大号)
+
+# SEO (搜索引擎优化)
+marketing:
+  seo:
+    site_type: Organization
+    local_business_type: ''
+    org_name: '地震物理模型实验室'
+    
+    # 【已修改】这里换成了您的实验室中文简介
+    # 这段话会显示在百度/谷歌搜索结果的摘要里
+    description: '地震物理模型实验室专注于地震波传播机理、物理模拟数据采集及成像方法研究，拥有先进的大型气浮三维地震物理模型实验系统。'
+    
+    twitter: ''          # 如果没有 Twitter 账号，建议留空
+  analytics:
+    google_analytics: ''
+    baidu_tongji: ''     # 建议去百度统计申请一个 ID 填在这里
+    google_tag_manager: ''
+    microsoft_clarity: ''
+  verification:
+    google: ''
+    baidu: ''
+
+# Site header (顶部导航栏)
+header:
+  navbar:
+    enable: true
+    align: r
+    show_logo: true
+    show_language: false
+    show_day_night: true
+    show_search: true
+    highlight_active_link: false
+
+# Site footer (底部页脚)
+footer:
+  copyright:
+    # 【建议】修改为实验室名称
+    notice: '© {year} 地震物理模型实验室'
+    license:
+      enable: true
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
+
+# Localization (本地化格式)
+locale:
+  # 【已修改】改为中国习惯的日期格式 (年-月-日)
+  # 注意：Go语言中必须用 2006-01-02 代表格式，数字不能乱改
+  date_format: '2006-01-02'
+  time_format: '3:04 PM'
+  address_format: en-us
+
+# Site features (功能开关)
+features:
+  syntax_highlighter:
+    enable: false
+    extra_languages:
+      - r
+      - latex
+  math:
+    # 【已修改】开启数学公式支持
+    # 现在您在文章里写 $$E=mc^2$$ 将会自动渲染成漂亮的公式
+    enable: true
+  privacy_pack:
+    enable: false
+  repository:
+    url: ''              # 如果不想显示"编辑此页"，这里留空即可
+    content_dir: content
+    branch: main
+  avatar:
+    gravatar: false
+    shape: circle
+  comment:
+    provider: ''
+    disqus:
+      shortname: ''
+      show_count: true
+    commento:
+      url: ''
+    giscus:
+      repo: ''
+      repo_id: ''
+      category: ''
+      category_id: ''
+  search:
+    provider: wowchemy
+    algolia:
+      app_id: ''
+      api_key: ''
+      index_name: ''
+      show_logo: false
+  map:
+    provider: 'mapnik'
+    api_key: ''
+    zoom: 15
+
+# Extensions (扩展插件)
+extensions:
+  decap_cms:
+    branch: main
+    local_backend: false
+  academicons:
+    enable: true         # 开启学术图标 (如 Google Scholar)
+
+# Citation style (引用样式)
+publications:
+  date_format: January 2006
+  citation_style: apa

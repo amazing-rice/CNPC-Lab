@@ -1,0 +1,84 @@
+# Configuration of Hugo
+# 针对“地震物理模型实验室”和中文环境进行了优化
+
+title: 地震物理模型实验室      # 网站标题
+baseURL: 'https://example.com/' # 【重要】上线前请改为您购买的真实域名
+
+############################
+## LANGUAGE (语言设置)
+############################
+
+defaultContentLanguage: zh-Hans   # 设置默认语言为简体中文
+hasCJKLanguage: true              # 开启中日韩支持，解决中文摘要截断问题
+defaultContentLanguageInSubdir: false
+removePathAccents: true           # 自动移除URL中的特殊符号
+
+# 【语言定义】
+languages:
+  zh-Hans:
+    languageName: 中文
+    weight: 1
+    title: 地震物理模型实验室      # 这里对应浏览器的标签页标题
+
+############################
+## ADVANCED (高级设置)
+############################
+
+enableGitInfo: false              # 如果不需要显示"最后修改于XX日期"，保持为 false
+summaryLength: 30                 # 列表页预览文字的长度
+pagination:
+  pagerSize: 10                   # 每页显示多少篇文章/项目
+enableEmoji: true                 # 支持表情符号
+enableRobotsTXT: true             # 生成爬虫协议
+footnotereturnlinkcontents: <sup>^</sup>
+
+# 忽略构建的文件类型
+ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+
+disableAliases: true              # 禁用别名重定向
+
+# 输出格式配置
+outputs:
+  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
+  section: [HTML, RSS]
+
+# 图片处理配置
+imaging:
+  resampleFilter: lanczos
+  quality: 75                     # 图片质量 75%
+  anchor: smart                   # 智能裁剪
+
+timeout: 600000                   # 构建超时时间
+
+# 分类映射
+taxonomies:
+  tag: tags
+  category: categories
+  publication_type: publication_types
+  author: authors
+
+# ==========================================================
+# Markdown 解析配置 (已合并修复，开启不安全HTML渲染)
+# ==========================================================
+markup:
+  _merge: deep
+  goldmark:
+    renderer:
+      unsafe: true  # <--- 关键！开启后 HTML 代码才能生效
+
+# 相关内容推荐配置
+related:
+  threshold: 80
+  includeNewer: true
+  toLower: true
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 70
+
+# 安全与站点地图配置
+security:
+  _merge: deep
+sitemap:
+  _merge: deep
