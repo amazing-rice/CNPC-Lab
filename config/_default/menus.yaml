@@ -6,32 +6,30 @@
 #   (中文说明：weight 参数定义了链接出现的顺序，数字越小越靠前。)
 
 main:
-  - name: 实验室概况     # 菜单栏显示的名称：导览
-    url: /              # 链接地址：这里指向 'content/index.md' 根目录
-    weight: 10          # 排序权重：10 (数字最小，显示在最左边)
+  - name: 实验室概况        # 首页/概况
+    url: /
+    weight: 10
 
-  - name: 新闻动态       # 菜单栏显示的名称：新闻动态
-    url: post           # 链接地址：这里指向 'content/post' (通常用于存放博客或新闻文章)
-    weight: 20          # 排序权重：20 (排在 Tour 之后)
+  - name: 核心技术成果          # 对应 publication
+    url: publication
+    weight: 20
 
+  - name: 实验平台与典型案例 # 对应 equipment
+    url: equipment
+    weight: 30
 
+  - name: 团队科研人员      # 对应 people
+    url: people
+    weight: 40
 
-  - name: 团队科研人员        # 菜单栏显示的名称：成员/人物
-    url: people         # 链接地址：指向 'content/people' (团队成员介绍)
-    weight: 30          # 排序权重：30
+  - name: 学术活动          # 对应 event
+    url: event
+    weight: 50
 
-  - name: 学术活动        # 菜单栏显示的名称：学术活动/会议
-    url: event          # 链接地址：指向 'content/event'
-    weight: 40          # 排序权重：40
+  - name: 合作交流动态          # 对应 post
+    url: post
+    weight: 60
 
-  - name: 近年成果  # 菜单栏显示的名称：发表论文/出版物
-    url: publication    # 链接地址：指向 'content/publication'
-    weight: 50          # 排序权重：50
-
-  - name: 实验平台与典型案例
-    url: equipment  # 对应 content/equipment 文件夹
-    weight: 60      # 调整这个数字，决定它排在第几个
-
-  - name: 联系我们      # 菜单栏显示的名称：联系我们
-    url: contact        # 链接地址：指向 'content/contact' 或联系页面
-    weight: 70          # 排序权重：70 (排在最后)
+  - name: 联系我们          # 对应 contact
+    url: contact
+    weight: 70

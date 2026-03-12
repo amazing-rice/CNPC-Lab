@@ -1,142 +1,115 @@
 ---
-title: 学术成果与科研项目
-view: compact  # 保持 compact 视图，支持搜索和自动化列表
+title: 科研实力与成果概览
+view: compact
 header:
-  caption: ""
   image: ""
+  caption: ""
 ---
 
-<div class="row" style="margin-bottom: 30px;">
-  
-  <div class="col-md-4">
-    <div class="alert alert-info text-center" style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); height: 100%;">
-      <h2 style="margin: 10px 0; color: #0c5460;"><i class="fas fa-scroll"></i> 130+</h2>
-      <p style="font-size: 0.9em; margin-bottom: 5px;"><strong>高水平学术论文</strong></p>
-      <span style="font-size: 0.8em; color: #555;">SCI 60余篇 | 国际会议 70余篇</span>
-    </div>
+<div class="row" style="margin-bottom: 50px;">
+  <div class="col-12 text-center mb-4">
+    <h2 style="color: #333; font-weight: bold;">权威物理模拟数据与核心技术</h2>
+    <p class="text-muted">依托自主研发的工业级物理模拟系统，提供高信噪比基准数据与复杂构造成像方案</p>
   </div>
 
-  <div class="col-md-4">
-    <div class="alert alert-warning text-center" style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); height: 100%;">
-      <h2 style="margin: 10px 0; color: #856404;"><i class="fas fa-certificate"></i> 50+</h2>
-      <p style="font-size: 0.9em; margin-bottom: 5px;"><strong>国家发明专利</strong></p>
-      <span style="font-size: 0.8em; color: #555;">授权与申报总数</span>
-    </div>
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm" style="border: none; overflow: hidden;">
+      <div style="height: 180px; overflow: hidden;">
+        <img src="/media/welcome.jpg" class="card-img-top" style="object-fit: cover; height: 100%;" alt="波场快照">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="font-size: 1.1rem;">高精度弹性波场快照</h5>
+        <p class="card-text" style="font-size: 0.85rem; color: #666;">
+          针对裂缝、缝洞及各向异性介质，获取清晰的波场传播特征，验证理论算法精度。
+        </p>
+        <a href="/equipment/#data-gallery" class="btn btn-outline-primary btn-sm btn-block">
+          <i class="fas fa-images"></i> 查看更多实验数据
+        </a>
+      </div>
+    </div>         
   </div>
 
-  <div class="col-md-4">
-    <div class="alert alert-success text-center" style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); height: 100%;">
-      <h2 style="margin: 10px 0; color: #155724;"><i class="fas fa-flask"></i> 10+</h2>
-      <p style="font-size: 0.9em; margin-bottom: 5px;"><strong>国家及省部级课题</strong></p>
-      <div style="font-size: 0.75em; color: #555; text-align: left; padding-left: 10px;">
-        • 国家重大专项: 5项<br>
-        • 重点/国际合作/面上/青年基金: 共5项
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm" style="border: none; overflow: hidden;">
+      <div style="height: 180px; overflow: hidden;">
+        <img src="/media/welcome.jpg" class="card-img-top" style="object-fit: cover; height: 100%;" alt="成像剖面">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="font-size: 1.1rem;">复杂构造成像解决方案</h5>
+        <p class="card-text" style="font-size: 0.85rem; color: #666;">
+          从物理建模到偏移成像的全流程技术支持，解决深层缝洞体成像难题。
+        </p>
+        <a href="/equipment/#imaging" class="btn btn-outline-primary btn-sm btn-block">
+          <i class="fas fa-layer-group"></i> 查看技术工艺详情
+        </a>
       </div>
     </div>
   </div>
 
-</div>
-
-<h3 style="border-left: 5px solid #d4af37; padding-left: 15px; margin-top: 40px; color: #333;">
-  🏆 获得国家及省部级奖励
-</h3>
-
-<div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin-top: 20px;">
-  <table class="table table-hover table-sm" style="margin-bottom: 0;">
-    <thead style="background-color: #e9ecef;">
-      <tr>
-        <th style="width: 15%;">年份</th>
-        <th style="width: 60%;">获奖项目名称</th>
-        <th style="width: 25%;">奖励等级</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2023</td>
-        <td>教育部高等学校科学研究优秀成果奖</td>
-        <td><span class="badge badge-primary" style="background-color: #007bff; color: white;">省部级 一等奖</span></td>
-      </tr>
-      <tr>
-        <td>2023</td>
-        <td>中国石油和化学工业联合会科技进步</td>
-        <td><span class="badge badge-info" style="background-color: #17a2b8; color: white;">省部级 二等奖</span></td>
-      </tr>
-      <tr>
-        <td>2019</td>
-        <td>中国产学研合作创新成果奖</td>
-        <td><span class="badge badge-primary" style="background-color: #007bff; color: white;">省部级 一等奖</span></td>
-      </tr>
-      <tr>
-        <td>2019</td>
-        <td>中国发明协会发明创业成果奖</td>
-        <td><span class="badge badge-primary" style="background-color: #007bff; color: white;">省部级 一等奖</span></td>
-      </tr>
-      <tr>
-        <td>2018</td>
-        <td>中国石油和化学工业联合会科学技术奖</td>
-        <td><span class="badge badge-primary" style="background-color: #007bff; color: white;">省部级 一等奖</span></td>
-      </tr>
-      <tr>
-        <td>2017</td>
-        <td>非常规油气储层评价与预测关键技术及应用</td>
-        <td><span class="badge badge-primary" style="background-color: #007bff; color: white;">北京市 二等奖</span></td>
-      </tr>
-      <tr>
-        <td>2017</td>
-        <td>非常规油气储层预测地球物理关键技术及应用</td>
-        <td><span class="badge badge-info" style="background-color: #17a2b8; color: white;">中国地球物理学会 三等奖</span></td>
-      </tr>
-      <tr style="background-color: #fff3cd;">
-        <td><strong>2014</strong></td>
-        <td><strong>复杂油气储层裂缝定量识别与评价关键技术</strong></td>
-        <td><span class="badge badge-danger" style="background-color: #dc3545; color: white; padding: 5px 10px;">国家科技进步二等奖</span></td>
-      </tr>
-      <tr>
-        <td>2013</td>
-        <td>深部裂缝性油气储层预测与评价新技术</td>
-        <td><span class="badge badge-primary" style="background-color: #007bff; color: white;">北京市 一等奖</span></td>
-      </tr>
-      <tr>
-        <td>2010</td>
-        <td>裂缝性油气储层形成机理与评价预测新技术</td>
-        <td><span class="badge badge-warning" style="background-color: #ffc107; color: black;">中国地质学会十大科技进展</span></td>
-      </tr>
-      <tr>
-        <td>2010</td>
-        <td>复杂裂缝性油气储层评价与预测技术及应用</td>
-        <td><span class="badge badge-primary" style="background-color: #007bff; color: white;">省部级 一等奖</span></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<h3 style="border-left: 5px solid #007bff; padding-left: 15px; margin-top: 50px; color: #333;">
-  📌 实验室近年承担相关科研项目
-</h3>
-
-<div class="row" style="margin-top: 20px;">
-  <div class="col-12">
-    <div class="card card-body bg-light" style="border: none;">
-      <h5 style="color: #0056b3; margin-bottom: 15px;"><i class="fas fa-microscope"></i> 国家自然科学基金 (NSFC)</h5>
-      <ul class="fa-ul" style="margin-left: 20px; margin-bottom: 20px;">
-        <li><span class="fa-li"><i class="fas fa-check-circle" style="color: #28a745;"></i></span><strong>油气地球物理</strong> (2021)</li>
-        <li><span class="fa-li"><i class="fas fa-check-circle" style="color: #28a745;"></i></span><strong>裂缝介质横波传播机理的物理模拟实验研究</strong> (2021)</li>
-        <li><span class="fa-li"><i class="fas fa-check-circle" style="color: #28a745;"></i></span><strong>裂缝介质含水饱和度对地震各向异性影响的实验研究</strong> (2018)</li>
-        <li><span class="fa-li"><i class="fas fa-check-circle" style="color: #28a745;"></i></span><strong>地震勘探中的线性滑移理论研究：理论与实验</strong> (2018)</li>
-        <li><span class="fa-li"><i class="fas fa-check-circle" style="color: #28a745;"></i></span><strong>裂隙参数对地震波响应特征影响的物理模拟研究</strong> (2014)</li>
-        <li><span class="fa-li"><i class="fas fa-check-circle" style="color: #28a745;"></i></span><strong>页岩储层地震各向异性响应特征研究及应用</strong> (2012)</li>
-      </ul>
-
-<h5 style="color: #d39e00; margin-bottom: 15px;"><i class="fas fa-star"></i> 国家科技重大专项</h5>
-      <ul class="fa-ul" style="margin-left: 20px;">
-        <li><span class="fa-li"><i class="fas fa-star" style="color: #ffc107;"></i></span><strong>多波地震勘探配套技术</strong> (2017)</li>
-        <li><span class="fa-li"><i class="fas fa-star" style="color: #ffc107;"></i></span><strong>典型前陆盆地冲断带深部-斜坡带有利储层综合评价</strong> (2011)</li>
-        <li><span class="fa-li"><i class="fas fa-star" style="color: #ffc107;"></i></span><strong>多波地震勘探及裂缝储层预测配套技术</strong> (2010)</li>
-      </ul>
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm" style="border: none; overflow: hidden;">
+      <div style="height: 180px; overflow: hidden;">
+        <img src="/media/welcome.jpg" class="card-img-top" style="object-fit: cover; height: 100%;" alt="横向合作">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="font-size: 1.1rem;">企业横向合作案例</h5>
+        <p class="card-text" style="font-size: 0.85rem; color: #666;">
+          已承担中石油、中石化等企业级重大攻关项目50余项，实现产学研深度融合。
+        </p>
+        <a href="/contact/" class="btn btn-primary btn-sm btn-block">
+          <i class="fas fa-handshake"></i> 寻求项目合作
+        </a>
+      </div>
     </div>
   </div>
 </div>
 
-<hr style="margin: 50px 0; border-top: 2px dashed #eee;">
+<hr style="border-top: 1px dashed #ddd; margin: 40px 0;">
 
-<h3 style="text-align: center; color: #555; margin-bottom: 30px;">📚 论文成果库 (Publications)</h3>
+<div class="row text-center mb-5">
+  <div class="col-md-4 mb-3">
+    <h2 style="color: #0056b3; font-weight: bold;">130+</h2>
+    <p class="font-weight-bold">高水平学术论文</p>
+  </div>
+  <div class="col-md-4 mb-3">
+    <h2 style="color: #d39e00; font-weight: bold;">50+</h2>
+    <p class="font-weight-bold">国家发明专利</p>
+  </div>
+  <div class="col-md-4 mb-3">
+    <h2 style="color: #28a745; font-weight: bold;">10+</h2>
+    <p class="font-weight-bold">国家级纵向课题</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 mb-4">
+    <h4 style="border-left: 4px solid #d39e00; padding-left: 10px; margin-bottom: 20px;">
+      🏆 权威科技奖励 (Top 3)
+    </h4>
+    <ul class="fa-ul" style="color: #444;">
+      <li class="mb-2"><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><strong>教育部高等学校科学研究优秀成果一等奖</strong> (2023)</li>
+      <li class="mb-2"><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><strong>中国产学研合作创新成果一等奖</strong> (2019)</li>
+      <li class="mb-2"><span class="fa-li"><i class="fas fa-award text-danger"></i></span><strong>国家科技进步二等奖</strong> (2014, 参与)</li>
+    </ul>
+    <a href="/people/#honors" class="btn btn-link p-0">查看全部获奖列表 &rarr;</a>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <h4 style="border-left: 4px solid #0056b3; padding-left: 10px; margin-bottom: 20px;">
+      📌 重大科研项目 (Top 3)
+    </h4>
+    <ul class="fa-ul" style="color: #444;">
+      <li class="mb-2"><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span><strong>国家自然科学基金</strong>：裂缝介质横波传播机理研究</li>
+      <li class="mb-2"><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span><strong>国家科技重大专项</strong>：多波地震勘探配套技术</li>
+      <li class="mb-2"><span class="fa-li"><i class="fas fa-briefcase text-success"></i></span><strong>企业横向攻关</strong>：深层碳酸盐岩缝洞体物理模拟</li>
+    </ul>
+    <a href="/equipment/" class="btn btn-link p-0">查看科研项目详情 &rarr;</a>
+  </div>
+</div>
+
+<hr style="border-top: 2px solid #eee; margin-top: 40px;">
+
+<div class="text-center mt-5 mb-4">
+  <h3 style="color: #555;">📚 近年代表性论文</h3>
+  <p class="text-muted">（下方列表实时更新）</p>
+</div>
