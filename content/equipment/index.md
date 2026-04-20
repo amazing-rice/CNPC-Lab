@@ -286,7 +286,7 @@ sections:
                   <h4 class="text-dark mb-0">3. 页岩气储层各向异性模拟</h4>
                 </div>
                 <div class="p-0" style="position: relative;">
-                  <img src="/media/equipment/lab_example/example3.png" class="img-fluid zoom-img" style="height:350px; width:100%; object-fit:contain;">
+                  <img src="/media/equipment/lab_example/example3-1.png" class="img-fluid zoom-img" style="height:350px; width:100%; object-fit:contain;">
                 </div>
                 <div class="p-3 d-flex justify-content-end">
                   <a href="/equipment/cases/case3" class="text-primary text-decoration-none">
@@ -316,7 +316,7 @@ sections:
                   <h4 class="text-dark mb-0">5. 火山岩储层物理模拟</h4>
                 </div>
                 <div class="p-0" style="position: relative;">
-                  <img src="/media/equipment/lab_example/example5.png" class="img-fluid zoom-img" style="height:350px; width:100%; object-fit:contain;">
+                  <img src="/media/equipment/lab_example/example5-1.png" class="img-fluid zoom-img" style="height:350px; width:100%; object-fit:contain;">
                 </div>
                 <div class="p-3 d-flex justify-content-end">
                   <a href="/equipment/cases/case5" class="text-primary text-decoration-none">
@@ -331,7 +331,7 @@ sections:
                   <h4 class="text-dark mb-0">6. 煤层气储层裂缝模拟</h4>
                 </div>
                 <div class="p-0" style="position: relative;">
-                  <img src="/media/equipment/lab_example/example6.png" class="img-fluid zoom-img" style="height:350px; width:100%; object-fit:contain;">
+                  <img src="/media/equipment/lab_example/example6-1.png" class="img-fluid zoom-img" style="height:350px; width:100%; object-fit:contain;">
                 </div>
                 <div class="p-3 d-flex justify-content-end">
                   <a href="/equipment/cases/case6" class="text-primary text-decoration-none">
@@ -361,7 +361,7 @@ sections:
                   <h4 class="text-dark mb-0">8. 致密砂岩气藏模拟</h4>
                 </div>
                 <div class="p-0" style="position: relative;">
-                  <img src="/media/equipment/lab_example/example8.png" class="img-fluid zoom-img" style="height:350px; width:100%; object-fit:contain;">
+                  <img src="/media/equipment/lab_example/example8-1.png" class="img-fluid zoom-img" style="height:350px; width:100%; object-fit:contain;">
                 </div>
                 <div class="p-3 d-flex justify-content-end">
                   <a href="/equipment/cases/case8" class="text-primary text-decoration-none">
@@ -391,7 +391,7 @@ sections:
                   <h4 class="text-dark mb-0">10. 潜山油气藏物理模拟</h4>
                 </div>
                 <div class="p-0" style="position: relative;">
-                  <img src="/media/equipment/lab_example/example10.png" class="img-fluid zoom-img" style="height:350px; width:100%; object-fit:contain;">
+                  <img src="/media/equipment/lab_example/example10-1.png" class="img-fluid zoom-img" style="height:350px; width:100%; object-fit:contain;">
                 </div>
                 <div class="p-3 d-flex justify-content-end">
                   <a href="/equipment/cases/case10" class="text-primary text-decoration-none">

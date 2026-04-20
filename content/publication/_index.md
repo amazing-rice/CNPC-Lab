@@ -6,57 +6,76 @@ header:
   caption: ""
 ---
 
+<style>
+/* 按钮图标统一样式 */
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* 卡片优化（更高级一点） */
+.card:hover {
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+</style>
+
 <div class="row" style="margin-bottom: 50px;">
   <div class="col-12 text-center mb-4">
     <h2 style="color: #333; font-weight: bold;">权威物理模拟数据与核心技术</h2>
     <p class="text-muted">依托自主研发的工业级物理模拟系统，提供高信噪比基准数据与复杂构造成像方案</p>
   </div>
 
+  <!-- 卡片1 -->
   <div class="col-md-4 mb-4">
     <div class="card h-100 shadow-sm" style="border: none; overflow: hidden;">
       <div style="height: 180px; overflow: hidden;">
         <img src="/media/welcome.jpg" class="card-img-top" style="object-fit: cover; height: 100%;" alt="波场快照">
       </div>
-      <div class="card-body">
+      <div class="card-body d-flex flex-column">
         <h5 class="card-title" style="font-size: 1.1rem;">高精度弹性波场快照</h5>
         <p class="card-text" style="font-size: 0.85rem; color: #666;">
           针对裂缝、缝洞及各向异性介质，获取清晰的波场传播特征，验证理论算法精度。
         </p>
-        <a href="/equipment/#data-gallery" class="btn btn-outline-primary btn-sm btn-block">
+        <a href="/equipment/#data-gallery" class="btn btn-outline-primary btn-sm btn-icon mt-auto">
           <i class="fas fa-images"></i> 查看更多实验数据
         </a>
       </div>
     </div>         
   </div>
 
+  <!-- 卡片2 -->
   <div class="col-md-4 mb-4">
     <div class="card h-100 shadow-sm" style="border: none; overflow: hidden;">
       <div style="height: 180px; overflow: hidden;">
         <img src="/media/welcome.jpg" class="card-img-top" style="object-fit: cover; height: 100%;" alt="成像剖面">
       </div>
-      <div class="card-body">
+      <div class="card-body d-flex flex-column">
         <h5 class="card-title" style="font-size: 1.1rem;">复杂构造成像解决方案</h5>
         <p class="card-text" style="font-size: 0.85rem; color: #666;">
           从物理建模到偏移成像的全流程技术支持，解决深层缝洞体成像难题。
         </p>
-        <a href="/equipment/#imaging" class="btn btn-outline-primary btn-sm btn-block">
+        <a href="/equipment/#imaging" class="btn btn-outline-primary btn-sm btn-icon mt-auto">
           <i class="fas fa-layer-group"></i> 查看技术工艺详情
         </a>
       </div>
     </div>
   </div>
 
+  <!-- 卡片3 -->
   <div class="col-md-4 mb-4">
     <div class="card h-100 shadow-sm" style="border: none; overflow: hidden;">
       <div style="height: 180px; overflow: hidden;">
         <img src="/media/welcome.jpg" class="card-img-top" style="object-fit: cover; height: 100%;" alt="横向合作">
       </div>
-      <div class="card-body">
+      <div class="card-body d-flex flex-column">
         <h5 class="card-title" style="font-size: 1.1rem;">企业横向合作案例</h5>
         <p class="card-text" style="font-size: 0.85rem; color: #666;">
           已承担中石油、中石化等企业级重大攻关项目50余项，实现产学研深度融合。
         </p>
-        <a href="/contact/" class="btn btn-primary btn-sm btn-block">
+        <a href="/contact/" class="btn btn-primary btn-sm btn-icon mt-auto">
           <i class="fas fa-handshake"></i> 寻求项目合作
         </a>
       </div>

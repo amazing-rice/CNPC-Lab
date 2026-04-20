@@ -1,86 +1,58 @@
 ---
-# ==============================
-# 基础信息设置
-# ==============================
-title: Example Event           # 事件/演讲标题 (例如："第25届地球物理年会" 或 "2025春季学期组会")
+title: "SEG 2025 休斯顿年会 - 团队预演汇报"
 
-event: Wowchemy Conference     # 会议/活动名称 (例如："SEG 2024 Annual Meeting")
-event_url: https://example.org # 会议官网链接 (可选)
+# 活动摘要 (在列表页显示)
+summary: "针对即将到来的 SEG 2025 年会，团队两篇入选摘要进行全英文行前预演。"
 
-# ==============================
-# 地点设置
-# ==============================
-location: Wowchemy HQ          # 地点名称 (例如："教一楼 305 会议室" 或 "Zoom 线上")
-address:                       # 详细地址 (如果是线上会议，或者是校内，这部分可以留空或删掉)
-  street: 450 Serra Mall       # 街道
-  city: Stanford               # 城市
-  region: CA                   # 省/州
-  postcode: '94305'            # 邮编
-  country: United States       # 国家
+# 事件起止时间
+date: '2025-08-20T15:00:00Z'
+date_end: '2025-08-20T17:00:00Z'
+all_day: false
 
-summary: An example event.     # 简短摘要 (显示在首页或列表页的预览文字)
-abstract: 'Lorem ipsum...'     # 详细摘要/简介 (支持 Markdown，可以写演讲的大纲或详细背景)
+# 活动分类（您可以自定义，例如：学术会议、组会汇报）
+event: "学术动态"
+event_url: ""
 
-# ==============================
-# 时间设置 (关键)
-# 格式必须是：YYYY-MM-DDTHH:MM:SSZ (注意中间的 T 和最后的 Z)
-# ==============================
-date: '2030-06-01T13:00:00Z'      # 开始时间
-date_end: '2030-06-01T15:00:00Z'  # 结束时间 (如果不想显示结束时间，可以在这一行前面加 # 注释掉)
-all_day: false                    # 是否为全天活动 (true/false)
+# 地点信息
+location: "腾讯会议 (线上) + 综合科研楼 305 会议室"
+address:
+  street: '府学路18号'
+  city: '北京'
+  region: '昌平区'
+  postcode: '102249'
+  country: '中国'
 
-# 页面发布日期 (这不是演讲日期，而是这个页面在网站上显示的日期)
-publishDate: '2017-01-01T00:00:00Z'
+# 演讲者/负责人
+authors:
+  - 丁拼博
+  - 王五
+  - 赵六
 
-authors: []        # 演讲者/作者 (填写 content/authors/ 里的文件夹名，例如 ["admin", "zhang-san"])
-tags: []           # 标签 (例如 ["地震反演", "学术报告"])
-
-# ==============================
-# 推荐设置
-# ==============================
-featured: false    # 是否为精选/置顶活动 (true 会显示在首页的 Featured 板块)
-
-# ==============================
-# 封面图设置
-# ==============================
+# 列表页展示图片 (需放在同文件夹下，改名为 featured.jpg)
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
-  focal_point: Right  # 图片裁剪重心 (Smart, Center, Top, Left, Right, Bottom)
+  caption: ''
+  focal_point: ''
 
-# ==============================
-# 资源链接按钮 (可选)
-# 填上链接后，页面会自动生成对应的按钮。留空则不显示。
-# ==============================
-url_code: ''       # 相关代码链接
-url_pdf: ''        # PDF 课件链接 (可将文件放在 static/files/ 下，填 'files/ppt.pdf')
-url_slides: ''     # 幻灯片下载链接
-url_video: ''      # 录像视频链接
-
-# ==============================
-# 关联 Markdown 幻灯片 (高级功能)
-# ==============================
-# 如果您用 Hugo 制作了网页版 PPT (在 content/slides/ 目录下)，这里填文件名。
-# 如果没有，留空即可。
-slides:
-
-# ==============================
-# 关联项目
-# ==============================
-# 如果这个演讲属于某个科研项目，这里填项目文件夹名。
-projects:
+# 底部链接按钮（可指向幻灯片、视频等）
+links:
+  - icon: video
+    icon_pack: fas
+    name: "会议链接"
+    url: "#"
 ---
 
-Slides can be added in a few ways:
-(幻灯片可以通过以下几种方式添加：)
+### <span style="color: #A6192E;">活动详情</span>
 
-- **Create** slides using Wowchemy's [_Slides_](https://docs.hugoblox.com/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
-  (使用 Wowchemy 的 Slides 功能创建网页版 PPT，并在上面的 `slides` 参数中链接)
-  
-- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-  (上传现有的 PPT/PDF 文件到 `static/` 文件夹，并在上面的 `url_slides` 参数中填入链接)
-  
-- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://docs.hugoblox.com/writing-markdown-latex/).
-  (使用短代码直接在当前页面嵌入 Google Slides 或 Bilibili/YouTube 视频)
+本次汇报旨在提升团队成员在国际顶级学术会议（SEG Annual Meeting）上的表达能力。
 
-Further event details, including page elements such as image galleries, can be added to the body of this page.
-(更多活动详情，包括相册等页面元素，都可以添加到这里。)
+**<span style="color: #A6192E;">主要议程：</span>**
+
+1. **论文一预演**：全波形反演（FWI）在深层复杂构造中的应用。
+2. **论文二预演**：基于深度学习的地震各向异性参数估计。
+3. **专家点评**：针对幻灯片排版、英语发音及问答环节进行指导。
+
+---
+
+<div style="background-color: #fdf2f2; border-left: 5px solid #A6192E; padding: 15px; color: #333;">
+  <strong>💡 提示：</strong> 欢迎本院对上述方向感兴趣的同学列席交流。
+</div>

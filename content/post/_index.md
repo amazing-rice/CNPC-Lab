@@ -1,19 +1,58 @@
 ---
-# 页面标题：在浏览器标签页和页面顶部显示的文字
-title: 实验室动态  # 【建议修改】改为中文，例如："新闻中心" 或 "实验室动态"
+# 页面标题：留空以隐藏系统默认标题，保护导航栏
+title: ''  
 
-# Listing view (列表视图样式)
-# 决定了文章列表怎么排列。
-# 可选值：
-#   1. compact  (默认值：紧凑型。左边是小缩略图，右边是标题和摘要。适合图文混排)
-#   2. card     (卡片型。大图片在上方，文字在下方，网格排列。适合展示带精美图片的活动新闻)
-#   3. list     (列表型。只有文字标题和摘要，不显示图片。适合纯学术公告)
+# 列表视图：compact
 view: compact
 
-# Optional banner image (可选的顶部横幅图片)
-# 如果设置了图片，它会出现在标题的上方，横跨整个屏幕宽度。
-# 图片位置：必须放在项目的 assets/media/ 文件夹下。
+# 可选的顶部横幅
 banner:
-  caption: ''    # 图片版权说明或描述文字 (可选，留空即可)
-  image: ''      # 图片文件名 (例如：'headers/news-header.jpg')。留空则不显示横幅。
+  caption: ''
+  image: ''
+
+# 页面间距设计
+design:
+  spacing:
+    padding: ['0px', '0', '30px', '0']
 ---
+
+<div style="text-align: center; margin-bottom: 50px; padding-top: 20px;">
+  
+  <div style="
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'SimSun', serif; 
+    color: #A6192E; 
+    font-size: 3.2em; 
+    font-weight: 700; 
+    letter-spacing: 2px; 
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(166, 25, 46, 0.2); 
+  ">
+    实验室新闻
+  </div>
+
+  <div style="
+    display: inline-block; 
+    font-family: 'Open Sans', 'Lato', 'Noto Sans SC', sans-serif; 
+    color: #666; 
+    font-size: 1.1em;
+    font-weight: 300; 
+    letter-spacing: 1px;
+    border-bottom: 2px solid #A6192E; 
+    padding-bottom: 10px;
+    text-transform: uppercase; 
+  ">
+    新闻中心 / News & Updates
+  </div>
+
+</div>
+
+<div style="
+  border-left: 5px solid #A6192E; 
+  padding-left: 15px; 
+  margin-bottom: 50px; 
+  color: #666; 
+  text-align: left; 
+  line-height: 1.8;
+">
+  聚焦 CNPC 物探重点实验室的最新科研进展、学术交流、团队建设及重要通知。
+</div>

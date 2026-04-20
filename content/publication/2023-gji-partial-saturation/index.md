@@ -1,31 +1,26 @@
 ---
 title: "Influence of partial saturation on bulk modulus and attenuation: the experiment and the theoretical model"
-
 authors:
 - Lingyi He
 - admin
 - Bangrang Di
 - Feng Zhang
-
 date: "2023-11-01"
-
 publication: "*Geophysical Journal International*"
 publication_short: "Geophys. J. Int."
-
 summary: "通过超声波实验测试与理论建模，研究了部分流体饱和效应对岩石体积模量和地震波衰减的影响机制。"
-
 tags:
 - Rock Physics / 岩石物理
 - Seismic Attenuation / 地震波衰减
 - Partial Saturation / 部分饱和
 - Elasticity / 弹性理论
-
 image:
   caption: ''
   focal_point: ""
   preview_only: false
-
 url_pdf: ""
+url_code: ""
+url_dataset: ""
 doi: "10.1093/gji/ggad303"
 featured: true
 ---
