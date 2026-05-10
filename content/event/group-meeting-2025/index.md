@@ -1,6 +1,6 @@
 ---
 title: 2025年春季学期第8次组会：全波形反演进展汇报
-event: WaveTomo 课题组常规组会
+event: 课题组常规组会
 
 location: 中国石油大学(北京) 地质楼
 address: 

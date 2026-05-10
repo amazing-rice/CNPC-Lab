@@ -15,20 +15,20 @@ sections:
           align: center
           background:
             image:
-              filename: welcome.jpg
+              filename: teachers.jpg
               filters:
-                brightness: 0.4
+                brightness: 0.9
           link:
             text: 了解实验室
-            url: "/people/"
-        - title: 自动化数据采集平台
+            url: "/publication/"
+        - title: 地震物理模拟数据采集系统
           content: 工业级大型气浮三维自动采集系统
           align: center
           background:
             image:
-              filename: welcome.jpg
+              filename: 3wei shebei.jpg
               filters:
-                brightness: 0.4
+                brightness: 0.9
           link:
             text: 查看装备
             url: "/equipment/"
@@ -107,56 +107,66 @@ sections:
         color: "#ffffff" # 改回纯白背景，形成视觉层次
 
   # ============================================================
-  # 5. 独家物理模型与基准数据展示 (图片压扁，移除内嵌CTA)
+  # 5. 独家物理模型与基准数据 (真实 PPT 数据版)
   # ============================================================
   - block: markdown
     content:
-      title: "<span style='color: #A6192E;'>独家基准数据与物理模型</span>"
-      subtitle: "依托大型物理模拟平台，提供高保真地震波场数据，赋能算法验证与前沿机理研究。"
+      title: "<span style='color: #A6192E;'>独家物理模型与基准数据集</span>"
+      subtitle: "依托大型智能化实验平台，输出高保真地震波场数据，赋能勘探算法验证与前沿机理研究。"
       text: |
-        <div class="row text-center mt-3">
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 shadow-sm" style="border-radius: 8px; border: none; overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
-              <img src="/media/welcome.jpg" style="height: 150px; object-fit: cover;" alt="缝洞体数据">
-              <div class="card-body" style="padding: 1.2rem;">
-                <h6 style="font-weight: bold; color: #333;">深层缝洞体波场数据集</h6>
-                <p class="text-muted" style="font-size: 0.85em; margin-top: 8px; margin-bottom: 0;">
-                  包含不同溶洞尺度的高信噪比物理模拟数据，是验证复杂构造成像算法的绝佳测试集。
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 shadow-sm" style="border-radius: 8px; border: none; overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
-              <img src="/media/welcome.jpg" style="height: 150px; object-fit: cover;" alt="各向异性数据">
-              <div class="card-body" style="padding: 1.2rem;">
-                <h6 style="font-weight: bold; color: #333;">各向异性与裂缝模型数据</h6>
-                <p class="text-muted" style="font-size: 0.85em; margin-top: 8px; margin-bottom: 0;">
-                  涵盖不同介质的超声波透射与反射基准数据，用于验证横波分裂与方位各向异性理论。
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 shadow-sm" style="border-radius: 8px; border: none; overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)';" onmouseout="this.style.transform='translateY(0)';">
-              <img src="/media/welcome.jpg" style="height: 150px; object-fit: cover;" alt="多分量数据">
-              <div class="card-body" style="padding: 1.2rem;">
-                <h6 style="font-weight: bold; color: #333;">3D 多分量 (P/SV/SH) 数据集</h6>
-                <p class="text-muted" style="font-size: 0.85em; margin-top: 8px; margin-bottom: 0;">
-                  采用自研新型换能器采集的纯净多分量基准数据，支撑多波联合反演与岩性流体识别。
-                </p>
-              </div>
-            </div>
-          </div>
+        <style>
+        .data-card { background: #fff; border-radius: 8px; border: 1px solid #f0f0f0; overflow: hidden; transition: 0.3s; height: 100%; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+        .data-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(166,25,46,0.08); border-color: #f5c6cb; }
+        .data-img-box { height: 160px; overflow: hidden; position: relative; background: #e9ecef; display: flex; align-items: center; justify-content: center; }
+        .data-img-box img { width: 100%; height: 100%; object-fit: cover; }
+        .data-card-body { padding: 20px; }
+        .data-card-body h5 { color: #A6192E; font-size: 1.1rem; font-weight: bold; margin-bottom: 10px; }
+        .data-card-body p { color: #666; font-size: 0.9rem; line-height: 1.6; margin-bottom: 0; }
+        </style>
+
+        <div class="row g-4 mt-3">
+        <div class="col-md-4">
+        <div class="data-card">
+        <div class="data-img-box">
+        <img src="/media/equipment/lab_example/example10-1.png" alt="复杂构造三维波场数据集">
+        </div>
+        <div class="data-card-body">
+        <h5>复杂构造三维波场数据集</h5>
+        <p>基于高精度三维水槽系统采集。涵盖深层逆掩断裂、潜山及断陷盆地等复杂构造的高信噪比基准波场，是验证前沿高精度偏移成像算法的试金石。</p>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="data-card">
+        <div class="data-img-box">
+        <img src="/media/equipment/lab_example/example1.png" alt="非常规储层岩石物理数据集">
+        </div>
+        <div class="data-card-body">
+        <h5>页岩气储层及各向异性数据集</h5>
+        <p>构建包含不同裂缝密度的泸州页岩气工区模型。输出的波场数据可精确反映微裂缝对地震波速度及振幅的响应，支撑各向异性反演与甜点预测。</p>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="data-card">
+        <div class="data-img-box">
+        <img src="/media/equipment/lab_example/example3-2.png" alt="河道砂体及宽窄方位数据集">
+        </div>
+        <div class="data-card-body">
+        <h5>沉积扇与宽窄方位对比数据集</h5>
+        <p>针对河道砂体与三维冲积扇体，提供不同观测系统（宽/窄方位）下的高保真偏移成像数据，为地震采集脚印分析与目标成像质量评价提供直观依据。</p>
+        </div>
+        </div>
+        </div>
         </div>
     design:
       columns: '1'
       spacing:
-        padding: ["30px", "0", "40px", "0"]
+        padding: ["40px", "0", "60px", "0"]
       background:
-        color: "#fdf2f2" 
+        color: "#fdf8f8"
 
   # ============================================================
   # 6. 合并后的技术合作与服务 (二合一)
@@ -170,7 +180,7 @@ sections:
             我们秉持开放理念，提供<strong>定制物理模型、基准数据获取、波场机理分析</strong>等技术服务，助力学术研究与解决复杂油气勘探难题。
           </p>
           <a href="/contact/" style="display: inline-block; padding: 10px 30px; background-color: #ffffff; color: #A6192E; font-weight: bold; border-radius: 30px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';">
-            <i class="fas fa-envelope mr-1"></i> 探讨合作 / 申请数据
+            <i class="fas fa-envelope mr-1"></i> 探讨合作 / 申请数据 / 加入我们
           </a>
         </div>
     design:

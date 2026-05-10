@@ -27,7 +27,7 @@ image:
   preview_only: false
 
 url_pdf: ""
-doi: "10.13811/j.cnki.dqwlxb.2024.03.011" # 注意：我为你补充了该文的真实DOI，如果不需要可删
+doi: "10.6038/cjg2023R0643" # 
 featured: true
 ---
 

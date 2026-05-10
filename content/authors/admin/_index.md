@@ -1,112 +1,84 @@
 ---
-# 显示名称 (网页上显示的名字)
 title: 丁拼搏
-
-# 姓名拼音 (用于 SEO 搜索引擎优化)
 first_name: Pinbo
 last_name: Ding
-
-# 是否是本站的主要管理员/博主？(true=是, false=否)
 superuser: true
-
-# 职位/头衔
 role: 副教授 / 博士生导师 / 重点实验室副主任
-
-# 所属机构/单位
 organizations:
   - name: 中国石油大学（北京）
     url: 'https://www.cup.edu.cn/'
-
-# 简短简介 (显示在文章末尾的作者档案中)
 bio: 主要从事岩石物理、地震物理模拟、多波勘探及CCUS地球物理监测等领域的研究。
-
-# 研究兴趣/方向 (会显示为标签)
 interests:
   - 岩石物理与地震物理模拟
   - 多波勘探与地震各向异性
-  - 非常规油气储层 (碳酸盐岩/致密砂岩/页岩)
-  - CCUS (CO₂封存监测与物理机制)
-
-# 教育背景 (按时间倒序排列)
+  - 非常规油气储层
+  - CCUS 封存监测
 education:
   courses:
-    - course: 地质资源与地质工程 博士
-      institution: 中国石油大学（北京）
-      year: 2015
-    - course: 联合培养博士研究生 (国家公派)
-      institution: 英国地质调查局 (British Geological Survey)
-      year: 2013
-    - course: 应用地球物理 硕士
-      institution: 成都理工大学
-      year: 2011
-    - course: 地质工程 学士
-      institution: 中国矿业大学
-      year: 2008
-
-# 社交网络/学术链接
+    - course: 地质资源与地质工程 博士 | 中国石油大学（北京） | 2015
+    - course: 联合培养博士研究生 | 英国地质调查局 (BGS) | 2013
 social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:dingpinbo@cup.edu.cn'
-  - icon: google-scholar
-    icon_pack: ai
-    link: https://scholar.google.com/ # 请替换为真实的谷歌学术链接，如果没有请删除此行
   - icon: researchgate
     icon_pack: ai
-    link: https://www.researchgate.net/ # 请替换为真实的RG链接，如果没有请删除此行
-  # - icon: github
-  #   icon_pack: fab
-  #   link: https://github.com/your-github # 如果没有GitHub可注释掉
-
-# 简历 PDF 链接
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
-
-# 输入邮箱以显示 Gravatar 头像
-email: ''
-
-# 是否在作者列表中高亮显示该名字? (true/false)
-highlight_name: true
-
-# 用户所属的组 (用于 People/Team 组件分类显示)
+    link: https://www.researchgate.net/profile/Pinbo-Ding
 user_groups:
   - 负责人 (Principal Investigator)
-  - 副教授
 ---
 
-丁拼搏，副教授，博士生导师。“地球探测与信息技术”北京市重点实验室副主任，《Petroleum Science》副主编，《石油物探》青年编委，油气勘探计算机软件国家工程研究中心（东方地球物理公司）外聘专家。入选第五届中国科协“青年人才托举工程”，获第十二届刘光鼎地球物理青年科技奖。
+<style>
+.profile-box { font-size: 0.95rem; color: #444; line-height: 1.6; padding: 20px; background: #fdfaf6; border-radius: 8px; border-left: 4px solid #A6192E; margin-bottom: 25px; }
+.section-title { font-size: 1.1rem; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 15px; margin-bottom: 12px; color: #A6192E; font-weight: bold; }
+.info-list { list-style: none; padding-left: 0; font-size: 0.9rem; margin-bottom: 10px; }
+.info-list li { margin-bottom: 6px; display: flex; align-items: flex-start; }
+.info-list i { margin-top: 4px; margin-right: 10px; color: #A6192E; width: 16px; text-align: center; }
+.award-tag { background: #f8f9fa; border: 1px solid #dae0e5; color: #666; padding: 2px 10px; border-radius: 15px; font-size: 0.8rem; display: inline-block; margin: 0 4px 6px 0; }
+.award-tag-gold { background: #fff8e6; border: 1px solid #ffeeba; color: #d39e00; }
+div.article-widget.content-widget-hr, .media.stream-item, div.section-heading h3 { display: none !important; }
+</style>
 
-近年来在 *GJI*、*Geophysics*、*RMRE*、*GP*、*JAG*、*PAAG*、《地球物理学报》等行业高水平期刊发表论文30余篇，授权中国专利9件、美国专利3件，主持国家自然科学基金青年科学基金、面上基金、国家油气重大专项、中石油、中石化、中海油、中国地调局等科研项目10余项，获省部级科研成果奖3项。
+<div class="profile-box">
+丁拼搏，副教授，博导，北京市重点实验室副主任。入选中国科协“青年人才托举工程”，获第十二届刘光鼎地球物理青年科技奖。发表论文 30 余篇，授权国内外专利 12 件，主持国家自然科学基金等项目 10 余项。
+<div style="margin-top: 15px;">
+<a href="https://www.cup.edu.cn/geophysics/szdw/fjs/2020a2c03bae4e74aec30f2721edc597.htm" target="_blank" style="display: inline-block; padding: 5px 15px; background: #A6192E; color: #fff; border-radius: 4px; font-size: 0.85rem; text-decoration: none;">
+<i class="fas fa-university mr-1"></i> 学校官网个人介绍
+</a>
+</div>
+</div>
 
-### 联系方式
-* **E-mail**：dingpinbo@cup.edu.cn
-* **通讯地址**：北京市昌平区府学路18号中国石油大学（北京）
-* **邮编**：102249
+<div class="row">
+<div class="col-md-5">
+<div class="section-title"><i class="fas fa-id-card mr-2"></i> 联系 & 课程</div>
+<ul class="info-list">
+<li><i class="fas fa-envelope"></i> dingpinbo@cup.edu.cn</li>
+<li><i class="fas fa-map-marker-alt"></i> 北京昌平区府学路18号</li>
+<li><i class="fas fa-book"></i> 《岩石物理学》《地震采集技术》</li>
+</ul>
+<div class="section-title"><i class="fas fa-users-cog mr-2"></i> 学术兼职</div>
+<ul class="info-list">
+<li><i class="fas fa-check-circle"></i> 《Petroleum Science》副主编</li>
+<li><i class="fas fa-check-circle"></i> 《石油物探》青年编委</li>
+</ul>
+</div>
 
-### 主讲课程
-《岩石物理学》、《实验地球物理》、《地震采集技术》
+<div class="col-md-7">
+<div class="section-title"><i class="fas fa-trophy mr-2"></i> 荣誉奖项</div>
+<div style="margin-bottom: 10px;">
+<span class="award-tag award-tag-gold">教育部科技进步一等奖</span>
+<span class="award-tag award-tag-gold">刘光鼎青年科技奖</span>
+<span class="award-tag">产学研合作创新奖一等奖</span>
+<span class="award-tag">校级优秀教师</span>
+</div>
+<div class="section-title"><i class="fas fa-project-diagram mr-2"></i> 代表性纵向课题</div>
+<ul class="info-list">
+<li><i class="fas fa-dot-circle"></i> 自科基金面上项目 (2022-2025)</li>
+<li><i class="fas fa-dot-circle"></i> 自科基金青年项目 (2019-2021)</li>
+<li><i class="fas fa-dot-circle"></i> 国家科技重大专项任务 (2017-2019)</li>
+</ul>
+</div>
+</div>
 
-### 主持的国家级科研项目
-1.  **国家自然科学基金（面上项目）**：裂缝介质横波传播机理的物理模拟实验研究 (2022-01至2025-12)，主持
-2.  **国家自然科学基金（青年科学基金）**：裂缝介质含水饱和度对地震各向异性影响的实验研究 (2019-01至2021-12)，主持
-3.  **中国科学技术协会**：第五届“中国科协青年人才托举工程”项目 (2019-01至2021-12)，主持
-4.  **国家科技重大专项课题-任务**：多尺度裂缝物理模型多波地震响应特征 (2017-01至2019-12)，主持
-
-### 奖励及荣誉
-* **教育部高等学校科学研究优秀成果奖一等奖** (2023年)
-* **刘光鼎地球物理青年科技奖** (2022年)
-* **中国石油大学（北京）优秀教师** (2022年)
-* **第八届全国大学生能源经济大赛优秀指导教师** (2022年)
-* **《Petroleum Science》优秀青年编委** (2021年)
-* **中国产学研合作创新成果奖一等奖** (2019年)
-* **中国地球物理科学技术进步奖三等奖** (2017年)
-
-### 学术及社会兼职
-* 地球探测与信息技术北京市重点实验室 副主任
-* 油气勘探计算机软件国家工程研究中心（东方地球物理公司） 外部专家
-* 《Petroleum Science》 副主编
-* 《石油物探》 青年编委
-* EAGE年会分会场主席
-* SEG年会、EAGE年会、ARMS年会审稿专家
-* **期刊审稿人**：《Geophysical Research Letters》、《Geophysical Journal International》、《地球物理学报》、《Geophysics》、《Journal of Applied Geophysics》等
+<div style="text-align: center; margin-top: 20px;">
+</div>

@@ -30,20 +30,6 @@ design:
     实验室新闻
   </div>
 
-  <div style="
-    display: inline-block; 
-    font-family: 'Open Sans', 'Lato', 'Noto Sans SC', sans-serif; 
-    color: #666; 
-    font-size: 1.1em;
-    font-weight: 300; 
-    letter-spacing: 1px;
-    border-bottom: 2px solid #A6192E; 
-    padding-bottom: 10px;
-    text-transform: uppercase; 
-  ">
-    新闻中心 / News & Updates
-  </div>
-
 </div>
 
 <div style="

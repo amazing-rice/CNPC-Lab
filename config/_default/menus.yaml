@@ -5,31 +5,46 @@
 #   The weight parameter defines the order that the links will appear in.
 #   (中文说明：weight 参数定义了链接出现的顺序，数字越小越靠前。)
 
+# Navigation Links (导航链接配置)
 main:
-  - name: 实验室概况        # 首页/概况
+  # 1. 首页 (保持最简)
+  - name: 首页
     url: /
     weight: 10
 
-  - name: 核心技术成果          # 对应 publication
-    url: publication
+  # 2. 团队人员
+  - name: 团队概况
+    url: people
     weight: 20
 
-  - name: 实验平台与典型案例 # 对应 equipment
+  # 3. 实验平台 (精简名称，作为主菜单)
+  - name: 实验平台
     url: equipment
     weight: 30
 
-  - name: 团队科研人员      # 对应 people
-    url: people
+  # 4. 科研与成果 (利用下拉菜单整合内容)
+  - name: 科研成果
+    url: publication
     weight: 40
 
-  - name: 学术活动          # 对应 event
-    url: event
+  # 5. 资讯与动态 (整合新闻和学术活动)
+  - name: 新闻动态
+    url: # 这里留空或者写一个概览页链接，作为父级菜单
     weight: 50
-
-  - name: 合作交流动态          # 对应 post
+  
+  # 5.1 新闻动态的子菜单：实验室新闻
+  - name: 实验室新闻
     url: post
-    weight: 60
+    parent: 新闻动态 # 指向父级菜单的 name
+    weight: 1
 
-  - name: 联系我们          # 对应 contact
+  # 5.2 新闻动态的子菜单：学术活动
+  - name: 学术活动
+    url: event
+    parent: 新闻动态
+    weight: 2
+
+  # 6. 联系我们
+  - name: 联系我们
     url: contact
-    weight: 70
+    weight: 60

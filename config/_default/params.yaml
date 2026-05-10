@@ -16,11 +16,10 @@ marketing:
     local_business_type: ''
     org_name: '地震物理模型实验室'
     
-    # 【已修改】这里换成了您的实验室中文简介
+  
     # 这段话会显示在百度/谷歌搜索结果的摘要里
     description: '地震物理模型实验室专注于地震波传播机理、物理模拟数据采集及成像方法研究，拥有先进的大型气浮三维地震物理模型实验系统。'
     
-    twitter: ''          # 如果没有 Twitter 账号，建议留空
   analytics:
     google_analytics: ''
     baidu_tongji: ''     # 建议去百度统计申请一个 ID 填在这里
