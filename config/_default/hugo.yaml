@@ -2,7 +2,7 @@
 # 针对“地震物理模型实验室”和中文环境进行了优化
 
 title: 地震物理模型实验室      # 网站标题
-baseURL: 'https://example.com/' # 【重要】上线前请改为您购买的真实域名
+baseURL: 'https://cnpc-lab.netlify.app/' # 【重要】上线前请改为您购买的真实域名
 
 ############################
 ## LANGUAGE (语言设置)

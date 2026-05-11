@@ -15,10 +15,8 @@ marketing:
     site_type: Organization
     local_business_type: ''
     org_name: '地震物理模型实验室'
-    
-  
     # 这段话会显示在百度/谷歌搜索结果的摘要里
-    description: '地震物理模型实验室专注于地震波传播机理、物理模拟数据采集及成像方法研究，拥有先进的大型气浮三维地震物理模型实验系统。'
+    description: '中国石油大学（北京）国家重点实验室地震物理模型实验室专注于地震波传播机理、物理模拟数据采集及成像方法研究，拥有先进的大型气浮三维地震物理模型实验系统。'
     
   analytics:
     google_analytics: ''
