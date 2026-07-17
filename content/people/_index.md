@@ -75,8 +75,9 @@ sections:
         </div>
 
 
-        <div class="team-section-title">🤝 客座教授与企业专家 (Enterprise Experts)</div>
+        <div class="team-section-title">🤝 教授与企业专家 (Enterprise Experts)</div>
 
+        <div class="team-grid">
           <div class="team-card">
             <a href="https://www.cup.edu.cn/geophysics/" target="_blank" class="team-img-box">
               <img src="lijingye.png" alt="李景叶">
@@ -121,6 +122,17 @@ sections:
               <div><span class="tag">国际知名地球物理学家</span></div>
               <div class="team-detail"><span class="team-icon">📍</span><strong>研究方向：</strong>地震各向异性理论、多波地震勘探、裂缝预测</div>
               <div class="team-detail"><span class="team-icon">🏆</span><strong>荣誉：</strong>国际科学技术合作奖、SEG杰出成就奖</div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-img-box"><img src="/media/people/default-avatar.png" alt="待添加"></div>
+            <div class="team-info">
+              <span class="team-name">专家姓名 (待补充)</span>
+              <div class="team-title">所在企业及职务 (待补充)</div>
+              <div><span class="tag-gray">特聘客座教授</span></div>
+              <div class="team-detail"><span class="team-icon">📍</span><strong>专长领域：</strong>(待补充)</div>
+              <div class="team-detail"><span class="team-icon">🏢</span><strong>合作方向：</strong>(待补充)</div>
             </div>
           </div>
         </div>
