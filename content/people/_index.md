@@ -79,11 +79,11 @@ sections:
 
         <div class="team-grid">
           <div class="team-card">
-            <a href="https://www.cup.edu.cn/geophysics/" target="_blank" class="team-img-box">
+            <a href="https://www.cup.edu.cn/geophysics/szdw/js/155605.htm" target="_blank" class="team-img-box">
               <img src="lijingye.png" alt="李景叶">
             </a>
             <div class="team-info">
-              <a href="https://www.cup.edu.cn/geophysics/" class="team-name" target="_blank">李景叶</a>
+              <a href="https://www.cup.edu.cn/geophysics/szdw/js/155605.htm" class="team-name" target="_blank">李景叶</a>
               <div class="team-title">中国石油大学（北京）副校长 / 教授 / 博导</div>
               <div><span class="tag">国家重点研发计划专家</span> <span class="tag-gray">北京市科技新星</span></div>
               <div class="team-detail"><span class="team-icon">📍</span><strong>研究方向：</strong>地震储层预测与动态监测、智能地球物理技术</div>
@@ -92,11 +92,11 @@ sections:
           </div>
 
           <div class="team-card">
-            <a href="https://www.cup.edu.cn/geophysics/" target="_blank" class="team-img-box">
+            <a href="https://www.cup.edu.cn/geophysics/xygk/xrld/170811.htm" target="_blank" class="team-img-box">
               <img src="ruizhenhua.png" alt="芮振华">
             </a>
             <div class="team-info">
-              <a href="https://www.cup.edu.cn/geophysics/" class="team-name" target="_blank">芮振华</a>
+              <a href="https://www.cup.edu.cn/geophysics/xygk/xrld/170811.htm" class="team-name" target="_blank">芮振华</a>
               <div class="team-title">地球物理学院院长 / 二级教授 / 博导</div>
               <div><span class="tag">国家级领军人才</span> <span class="tag-gray">SPE杰出会员</span></div>
               <div class="team-detail"><span class="team-icon">📍</span><strong>研究方向：</strong>CO2封存安全与检测、非常规油气、AI与数据挖掘</div>
@@ -122,6 +122,19 @@ sections:
               <div><span class="tag">国际知名地球物理学家</span></div>
               <div class="team-detail"><span class="team-icon">📍</span><strong>研究方向：</strong>地震各向异性理论、多波地震勘探、裂缝预测</div>
               <div class="team-detail"><span class="team-icon">🏆</span><strong>荣誉：</strong>国际科学技术合作奖、SEG杰出成就奖</div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <a href="https://www.cup.edu.cn/geophysics/szdw/js/9222dcf9fad8447087c3bc066be68546.htm" target="_blank" class="team-img-box">
+              <img src="tanggenyang.png" alt="唐跟阳">
+            </a>
+            <div class="team-info">
+              <a href="https://www.cup.edu.cn/geophysics/szdw/js/9222dcf9fad8447087c3bc066be68546.htm" class="team-name" target="_blank">唐跟阳</a>
+              <div class="team-title">中国石油大学（北京）地球物理学院副院长 / 教授 / 博导</div>
+              <div><span class="tag">青年拔尖人才</span> <span class="tag-gray">EAGE北京分会秘书长</span></div>
+              <div class="team-detail"><span class="team-icon">📍</span><strong>研究方向：</strong>低频岩石物理实验与理论、复杂介质地震波传播、俯冲带地壳构造</div>
+              <div class="team-detail"><span class="team-icon">📧</span><strong>邮箱：</strong>tanggenyang@163.com</div>
             </div>
           </div>
 
