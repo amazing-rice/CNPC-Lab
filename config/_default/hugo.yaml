@@ -1,83 +1,152 @@
-# Configuration of Hugo
-# 针对“地震物理模型实验室”和中文环境进行了优化
+# ==========================================================
+# 基础配置 (Base Configuration)
+# ==========================================================
 
-title: 地震物理模型实验室      # 网站标题
-baseURL: 'https://cnpc-lab.netlify.app/' # 【重要】上线前请改为您购买的真实域名
+# 网站的主标题，通常显示在浏览器标签页、导航栏或网站头部
+title: 地震物理模型实验室      
+
+# 【重要】网站的根域名/基础URL。
+# 本地测试 (hugo server) 时 Hugo 会自动处理，
+# 但在正式部署上线前（特别是绑定了您购买的真实域名后），必须将其修改为真实的 URL 网址（结尾需带 '/'）。
+# 否则会导致线上版本的 CSS 样式、图片等静态资源因路径错误而加载失败。
+baseURL: 'https://cnpc-lab.netlify.app/' 
 
 ############################
 ## LANGUAGE (语言设置)
 ############################
 
-defaultContentLanguage: zh-Hans   # 设置默认语言为简体中文
-hasCJKLanguage: true              # 开启中日韩支持，解决中文摘要截断问题
-defaultContentLanguageInSubdir: false
-removePathAccents: true           # 自动移除URL中的特殊符号
+# 指定网站的默认内容语言为简体中文。
+defaultContentLanguage: zh-Hans   
 
-# 【语言定义】
+# 开启对中日韩 (CJK) 语言的特殊支持。
+# 这对于准确计算中文字数、解决中文文章在列表页的摘要被莫名其妙截断或出现乱码的问题非常关键。
+hasCJKLanguage: true              
+
+# 默认语言是否需要放在单独的子目录中。
+# 设置为 false 表示中文内容直接在根目录下显示（如 cnpc-lab.netlify.app/about/）。
+# 如果设为 true，则会变成 cnpc-lab.netlify.app/zh-Hans/about/。
+defaultContentLanguageInSubdir: false
+
+# 自动移除 URL 路径中的特殊带音标字符（例如将 é 自动转为 e）。
+# 开启此项可以让 URL 更加纯净规范，对搜索引擎（SEO）更友好。
+removePathAccents: true           
+
+# 【语言定义】具体配置各语言的参数
 languages:
   zh-Hans:
-    languageName: 中文
-    weight: 1
-    title: 地震物理模型实验室  # 这里对应浏览器的标签页标题
+    languageName: 中文        # 在网站前端“多语言切换器”中显示的语言名称
+    weight: 1                 # 语言排序权重，数字越小，在语言切换列表中的优先级越高
+    title: 地震物理模型实验室 # 特定语言下的网站标题（此处与全局标题保持一致即可）
 
 ############################
 ## ADVANCED (高级设置)
 ############################
 
-enableGitInfo: false              # 如果不需要显示"最后修改于XX日期"，保持为 false
-summaryLength: 30                 # 列表页预览文字的长度
+# 是否读取 Git 提交记录。
+# 如果设为 true，Hugo 会自动获取文章在 Git 中的最后一次 commit 时间作为“最后修改日期”。
+# 如果您的网站不需要展示此信息，保持 false 可以有效加快页面的构建和编译速度。
+enableGitInfo: false              
+
+# 控制文章列表页中自动生成的“摘要”长度。
+# 结合上方的 hasCJKLanguage，此处的 30 代表截取正文开头的约 30 个中文字符作为文章预览。
+summaryLength: 30                 
+
+# 网站分页设置
 pagination:
-  pagerSize: 10                   # 每页显示多少篇文章/项目
-enableEmoji: true                 # 支持表情符号
-enableRobotsTXT: true             # 生成爬虫协议
+  pagerSize: 10                   # 每个列表页（如新闻列表、项目列表）显示的最大项目数量，超出 10 篇自动生成“下一页”
+
+# 是否原生支持 Markdown 中的 Emoji 表情（例如输入 :smile: 会解析为 😄）。
+enableEmoji: true                 
+
+# 是否自动生成 robots.txt 文件。
+# 开启后有利于百度、Google等搜索引擎爬虫更好地抓取网站页面，对 SEO 很有帮助。
+enableRobotsTXT: true             
+
+# 自定义 Markdown 脚注（注脚）返回正文的链接符号，这里用的是带上标的符号“^”。
 footnotereturnlinkcontents: <sup>^</sup>
 
-# 忽略构建的文件类型
+# 在构建网站时，指示 Hugo 忽略哪些文件或文件夹（支持正则表达式）。
+# 这里忽略了 Jupyter Notebook 文件 (.ipynb)、R Markdown 文件 (.Rmd) 以及缓存文件夹 (_cache)，
+# 避免这些中间文件被错误地渲染成网页或增加无谓的构建时间。
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 
-disableAliases: true              # 禁用别名重定向
+# 禁用别名重定向。
+# 如果您的文章没有频繁修改网址且不需要旧链接自动跳转到新链接，设为 true 可以减少生成大量多余的重定向 HTML 文件。
+disableAliases: true              
 
-# 输出格式配置
+# ==========================================================
+# 输出格式配置 (Outputs)
+# ==========================================================
 outputs:
+  # 首页生成的输出格式：
+  # 除了常规网页 (HTML)，还包括 RSS 订阅源、JSON（常用于站内搜索索引读取）、
+  # Web应用清单 (WebAppManifest)、HTTP响应头配置 (headers) 以及重定向规则 (redirects)。
   home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
+  # 分类/栏目页（如文章目录）的输出格式：仅生成网页 (HTML) 和 RSS 订阅源。
   section: [HTML, RSS]
 
-# 图片处理配置
+# ==========================================================
+# 图片处理配置 (Imaging)
+# ==========================================================
 imaging:
+  # 图片缩放时的重采样算法滤镜。'lanczos' 是一种高质量的缩放算法，能最大程度保持图片清晰度。
   resampleFilter: lanczos
-  quality: 75                     # 图片质量 75%
-  anchor: smart                   # 智能裁剪
+  # 图片压缩质量。75% 是在保证视觉清晰度与减小网页加载体积之间的一个极佳折中点。
+  quality: 75                     
+  # 图片裁剪时的锚点（对齐中心）。'smart' 表示 Hugo 会借助算法智能识别图片的核心主体，并以此为中心进行裁剪。
+  anchor: smart                   
 
-timeout: 600000                   # 构建超时时间
-
-# 分类映射
-taxonomies:
-  tag: tags
-  category: categories
-  publication_type: publication_types
-  author: authors
+# 构建网站的超时时间（单位：毫秒）。
+# 600000 毫秒即 10 分钟。如果您的实验室网站有海量的高清物理模型图片需要压缩处理，
+# 适当放宽超时时间可以防止 Netlify 等平台在部署时提示 Timeout 报错。
+timeout: 600000                   
 
 # ==========================================================
-# Markdown 解析配置 (已合并修复，开启不安全HTML渲染)
+# 分类法映射 (Taxonomies)
+# ==========================================================
+# 定义网站的分类维度（左侧为单数概念，右侧为复数形式的 URL 路径）。
+taxonomies:
+  tag: tags                             # 标签（用于通过关键词检索文章）
+  category: categories                  # 分类（用于按业务板块大类归档文章）
+  publication_type: publication_types   # 论文/出版物类型（学术团队网站的常用分类）
+  author: authors                       # 作者（方便点击人名查看该实验室成员发表的所有内容）
+
+# ==========================================================
+# Markdown 解析配置 (Markup)
 # ==========================================================
 markup:
+  # _merge: deep 表示与主题默认的 markup 配置进行深度合并叠加，而不是直接强行覆盖主题自带的预设配置。
   _merge: deep
+  # goldmark 是 Hugo 默认且高效的 Markdown 渲染引擎。
   goldmark:
     renderer:
-      unsafe: true  # <--- 关键！开启后 HTML 代码才能生效
+      # 【极其关键】：开启允许不安全内容的渲染。
+      # 默认情况下 Hugo 为了安全，会过滤掉 Markdown 源码中直接手写的原生 HTML 标签。
+      # 将其设为 true 后，您才能在 Markdown 文章里随意内嵌 <iframe> 视频（如 Bilibili/优酷视频代码）、
+      # 复杂的表格或带有自定义样式的 <div> 标签，且能让它们在网页上正常显示。
+      unsafe: true  
 
-# 相关内容推荐配置
+# ==========================================================
+# 相关内容推荐配置 (Related)
+# ==========================================================
+# 通常用于文章底部的“相关阅读”或“猜你喜欢”模块
 related:
-  threshold: 80
-  includeNewer: true
-  toLower: true
+  threshold: 80           # 相关度及格分数阈值（0-100）。匹配得分达到或超过 80 分的文章才会显示在推荐列表中。
+  includeNewer: true      # 是否允许把发布时间晚于（比当前文章新）的文章也推荐出来。
+  toLower: true           # 匹配标签等关键字时，是否将英文字母统一转为小写后再比较，从而避免因大小写不一致导致匹配失败。
   indices:
+    # 评分标准1：如果两篇文章含有相同的“标签 (tags)”，每中一个标签得 100 分（最高权重）。
     - name: tags
       weight: 100
+    # 评分标准2：如果两篇文章属于同一个“分类 (categories)”，增加 70 分。
     - name: categories
       weight: 70
 
-# 安全与站点地图配置
+# ==========================================================
+# 安全与站点地图配置 (Security & Sitemap)
+# ==========================================================
+# 与上述 markup 的合并逻辑相同。
+# _merge: deep 表示这里的设置将继承并合并 Hugo 核心或您使用的主题中默认的“安全策略”和“sitemap（供搜索引擎收录使用）”的设置。
 security:
   _merge: deep
 sitemap:
