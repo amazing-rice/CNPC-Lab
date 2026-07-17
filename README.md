@@ -1,127 +1,89 @@
-<<<<<<< HEAD
-# 地震物理模型实验室 (CNPC-Lab) 官方网站
-
-这是 **中国石油大学（北京）地震物理模型实验室 - 丁拼搏课题组** 的官方网站源代码仓库。本网站旨在展示实验室的研究成果、核心技术成果、实验平台装备以及团队动态。
-
-## 🌟 核心功能
-
-* **学术成果展示**：集成近年代表性论文列表，支持 DOI 跳转与详情页深度阅读。
-* **实验平台介绍**：详细展示大型气浮三维地震物理模型实验系统及配套装备。
-* **动态新闻发布**：记录实验室重大活动、学术交流及领导访问（如“部长参观”等）。
-* **团队成员看板**：展示课题组导师及研究生团队信息。
-* **响应式设计**：基于 Hugo Blox 框架，适配 PC、平板与手机端。
-
-## 🛠️ 技术栈
-
-* **框架**: [Hugo](https://gohugo.io/) (Static Site Generator)
-* **主题**: [Hugo Blox Builder](https://hugoblox.com/) (原 Academic 主题)
-* **部署**: [Netlify](https://www.netlify.com/) (自动化持续集成)
-* **版本控制**: Git / GitHub
-
-## 📂 目录结构说明
-
-根据项目截图，核心目录逻辑如下：
-
-=======
 ---
-
 # 地震物理模型实验室 (CNPC-Lab) 官方网站
 
-这是 **中国石油大学（北京）地震物理模型实验室 - 丁拼搏课题组** 的官方网站源代码仓库。本网站旨在展示实验室的研究成果、核心技术成果、实验平台设备以及团队动态。
+> 🔗 **在线预览站点**：https://cnpc-lab.netlify.app/
 
-## 🌟 核心功能
+这是 **中国石油大学（北京）地震物理模型实验室 - 丁拼搏课题组** 的官方网站源代码仓库。网站用于集中展示实验室研究成果、核心技术成果、实验平台设备与团队动态，服务于学术合作与对外宣传。
 
-* **学术成果展示**：集成近年代表性论文列表，支持 DOI 跳转与详情页深度阅读。
-* **实验平台介绍**：详细展示大型气浮三维地震物理模型实验系统及配套设备。
-* **动态新闻发布**：记录实验室重大活动、学术交流及领导访问（如“部长参观”等）。
-* **团队成员看板**：展示课题组导师及研究生团队信息。
-* **响应式设计**：基于 Hugo Blox 框架，适配 PC、平板与手机端。
+## ✨ 核心功能
+- **学术成果展示**：整合近年代表性论文列表，支持 DOI 跳转与详情页深度阅读
+- **实验平台介绍**：详细呈现大型气浮三维地震物理模型实验系统及配套设备
+- **动态新闻发布**：记录实验室重大活动、学术交流、来访访问等重要动态
+- **团队成员看板**：展示课题组导师及研究生团队的个人信息与研究方向
+- **全端响应式设计**：基于 Hugo Blox 框架构建，完美适配 PC、平板与移动端
 
 ## 🛠️ 技术栈
+- **站点框架**：[Hugo](https://gohugo.io/) — 高性能静态站点生成器
+- **主题体系**：[Hugo Blox Builder](https://hugoblox.com/) — 原 Academic 主题，结构化内容框架
+- **自动部署**：[Netlify](https://www.netlify.com/) — Git 驱动的持续集成与全球 CDN 分发
+- **版本控制**：Git / GitHub
 
-* **框架**: [Hugo](https://gohugo.io/) (Static Site Generator)
-* **主题**: [Hugo Blox Builder](https://hugoblox.com/) (原 Academic 主题)
-* **部署**: [Netlify](https://www.netlify.com/) (自动化持续集成)
-* **版本控制**: Git / GitHub
-
-## 📂 目录结构说明
-
-根据项目截图，核心目录逻辑如下：
-
->>>>>>> 09ccb71 (优化网站SEO检索描述)
+## 📂 目录结构
 ```text
 CNPC-Lab/
-├── config/_default/          # 网站核心配置文件
-│   ├── languages.yaml       # 多语言及浏览器标题设置
+├── config/_default/          # 网站核心配置目录
+│   ├── languages.yaml       # 多语言配置与页面标题设置
 │   ├── menus.yaml           # 顶部导航栏菜单定义
-│   ├── params.yaml          # 网站基本信息（Logo、SEO、页脚）
-│   └── hugo.yaml            # Hugo 全局配置
-├── content/                 # 网站所有文字内容
-│   ├── post/                # 实验室新闻动态（如：部长参观、中石油访问）
-│   ├── publication/         # 学术论文详情页（如：2024各向异性研究、2025裂缝预测）
+│   ├── params.yaml          # 站点基础参数（Logo、SEO、页脚信息）
+│   └── hugo.yaml            # Hugo 全局运行配置
+├── content/                 # 站点所有内容源文件（Markdown）
+│   ├── post/                # 实验室新闻动态
+│   ├── publication/         # 学术成果与技术详情
 │   │   ├── papers/          # 论文列表页
-│   │   └── rewards/         # 核心技术详情页
+│   │   └── rewards/         # 核心技术成果详情页
 │   ├── equipment/           # 实验平台与设备介绍
-│   ├── people/              # 团队成员信息
-│   └── authors/             # 个人详情配置（含个人头像 avatar.jpg）
+│   ├── people/              # 团队成员概览
+│   └── authors/             # 成员个人详情配置（含头像等资源）
 ├── static/media/            # 静态媒体资源
-│   ├── database/            # 数据库相关图片
-│   ├── equipment/           # 设备展示图
-│   └── publication_picture/ # 论文配图（如：lab_system.png）
-├── assets/media/            # 主题相关媒体资源（Logo、轮播图背景）
-├── netlify.toml             # Netlify 部署脚本配置文件
+│   ├── database/            # 数据相关配图
+│   ├── equipment/           # 设备展示图片
+│   └── publication_picture/ # 论文与成果配图
+├── assets/media/            # 主题相关媒体资源（Logo、轮播背景等）
+├── layouts/partials/        # 自定义页面组件
+├── netlify.toml             # Netlify 构建与部署配置
+├── theme.toml               # 主题配置文件
 └── README.md                # 项目说明文档
-
 ```
 
 ## 🚀 快速开始
 
-### 1. 本地开发环境搭建
-
-确保你已经安装了 [Hugo Extended 版本](https://gohugo.io/installation/)。
+### 1. 本地开发环境
+前置依赖：安装 **Hugo Extended 版本**（安装指引：[官方文档](https://gohugo.io/installation/)）
 
 ```bash
 # 克隆仓库
 git clone https://github.com/amazing-rice/CNPC-Lab.git
 
-# 进入目录
+# 进入项目目录
 cd CNPC-Lab
 
-# 启动本地实时预览服务器
+# 启动本地实时预览服务
 hugo server
-
 ```
 
-访问 `http://localhost:1313` 即可查看预览。
+启动后访问 `http://localhost:1313` 即可实时预览站点效果。
 
-### 2. 更新内容
+### 2. 内容更新指南
+- **新增论文**：在 `content/publication/` 下新建独立文件夹，参考现有格式放入 `index.md` 与封面图 `featured.png`
+- **发布新闻**：在 `content/post/` 下新建文件夹，命名推荐使用 `YYYY-MM-DD-标题标识` 格式
 
-* **添加论文**: 在 `content/publication/` 下新建文件夹，参考现有项目放置 `index.md` 和 `featured.png`。
-* **发布新闻**: 在 `content/post/` 下新建文件夹，命名格式推荐为 `YYYY-MM-DD-title`。
+## ☁️ 自动化部署
+项目已配置 Git-Ops 自动化部署流程，推送代码即可自动更新线上站点，预览地址为：https://cnpc-lab.netlify.app/
 
-## ☁️ 部署与维护
-
-本项目已实现 **Git-Ops 自动化部署**：
-
-1. 本地修改代码或内容。
-2. 执行 Git 提交：
+1. 本地完成内容或代码修改
+2. 提交并推送至主分支：
 ```bash
 git add .
-git commit -m "更新了XX论文详情"
+git commit -m "更新内容：XXX"
 git push origin main
-
 ```
+3. GitHub 收到推送后，Netlify 将自动触发构建，通常 1 分钟内完成全站更新。
 
-
-3. GitHub 收到推送后，**Netlify** 会自动触发构建并在 1 分钟内完成全网更新。
-
-## 📧 联系我们
-
-* **实验室名称**: 地震物理模型实验室 (中石油勘探开发研究院-中国石油大学联合实验室)
-* **所在单位**: 中国石油大学（北京）
-* **课题组**: 丁拼搏教授课题组
+## 📬 联系我们
+- **实验室全称**：地震物理模型实验室（中石油勘探开发研究院-中国石油大学联合实验室）
+- **依托单位**：中国石油大学（北京）
+- **负责课题组**：丁拼搏教授课题组
 
 ---
 
-*© 2026 地震物理模型实验室 | Built with Love and Science.*
-
+© 2026 地震物理模型实验室 | Built with Hugo & Hugo Blox
