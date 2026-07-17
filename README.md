@@ -1,4 +1,3 @@
----
 # 地震物理模型实验室 (CNPC-Lab) 官方网站
 
 > 🔗 **在线预览站点**：https://cnpc-lab.netlify.app/
